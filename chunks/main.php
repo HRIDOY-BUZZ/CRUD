@@ -17,7 +17,7 @@
                             <input type="time" class="form-control" name="task_time" id="task_time"  required>
                             <input type="date" class="form-control" name="task_date" id="task_date"  required>
                             <textarea class="form-control" name="description" id="description" cols="30" rows="5" placeholder="Describe the Task here . . ."></textarea>
-                            <input type="submit" class="form-control btn btn-primary" name="submit">
+                            <input type="submit" class="form-control btn btn-primary" name="submit" value="ADD TO LIST">
                         </form>
                     </div>
                 </div>

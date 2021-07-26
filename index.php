@@ -7,6 +7,8 @@
     <div class="page-wrapper">
         <?php include('chunks/header.php'); ?>
 
+        <?php include('backend/db.php') ?>
+
         <?php include('chunks/main.php'); ?>
 
         <?php include('chunks/footer.php'); ?>
