@@ -16,7 +16,6 @@
                                         <th>Time</th>
                                         <th>Date</th>
                                         <th>Description</th>
-                                        <th>Edit</th>
                                         <th>Delete</th>
                                     </tr>
 
@@ -30,7 +29,6 @@
                                         <td><?php echo $row['time']; ?></td>
                                         <td><?php echo $row['date']; ?></td>
                                         <td><?php echo $row['description']; ?></td>
-                                        <td><button type='button' class='btn btn-warning edit' name="edit" id='<?php echo $row['id']; ?>'>Edit</button></td>
                                         <td><button type='button' class='btn btn-danger delete' name="delete" id='<?php echo $row['id']; ?>'>Delete</button></td>
                                     </tr>
 

@@ -1,17 +1,19 @@
-//inserting data
+//inserting or Updating data
 $(document).on('click', "#submit", function(e) {
     e.preventDefault();
     let data = {
+        task_id: $('#task_id').val(),
         task_name: $('#task_name').val(),
         task_time: $('#task_time').val(),
         task_date: $('#task_date').val(),
         description: $('#description').val()
     }
     $.ajax({
-        url: './backend/create.php',
+        url: './backend/create_update.php',
         method: "POST",
         data: data,
         success: function(res) {
+            $('#task_id').val('');
             $('#task_name').val('');
             $('#task_time').val('');
             $('#task_date').val('');
@@ -34,11 +36,7 @@ function load_data() {
 
 
 }
-
-//calling load_data() for the load data from show.php as soon as document load....
 load_data();
-
-
 
 //delete data
 $(document).on('click', '.delete', function() {
