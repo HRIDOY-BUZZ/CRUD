@@ -1,6 +1,8 @@
 <?php
-    if(isset($_POST['submit']))
-    {
+    // if(isset($_POST['submit']))
+    //{
+        require_once('db.php');
+
         $task_name = htmlentities($_POST['task_name']);
         $task_time = htmlentities($_POST['task_time']);
         $task_date = htmlentities($_POST['task_date']);
@@ -24,5 +26,5 @@
         }
 
         // echo "messages = ".$form_success." ".$form_error;
-    }
+    //}
 ?>

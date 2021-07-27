@@ -7,4 +7,7 @@
 
     $form_success = "";
     $form_error = "";
+
+    $delete_success = "";
+    $delete_failed = "";
 ?>
