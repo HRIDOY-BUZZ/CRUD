@@ -5,14 +5,21 @@
 </head>
 <body>
     <div class="page-wrapper">
-        <?php include('chunks/header.php'); ?>
+        <?php 
+            require_once('backend/db.php');
 
-        <?php include('backend/db.php') ?>
+            include('backend/create.php');
+            include('backend/read.php');
+            include('backend/update.php');
+            include('backend/delete.php');
 
-        <?php include('chunks/main.php'); ?>
+            include('chunks/header.php');
 
-        <?php include('chunks/footer.php'); ?>
-        <?php include('chunks/scripts.php'); ?>
+            include('chunks/main.php');
+
+            include('chunks/footer.php');
+            include('chunks/scripts.php'); 
+        ?>
     </div>
 </body>
 </html>

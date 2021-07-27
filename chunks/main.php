@@ -17,6 +17,29 @@
                             <input type="time" class="form-control" name="task_time" id="task_time"  required>
                             <input type="date" class="form-control" name="task_date" id="task_date"  required>
                             <textarea class="form-control" name="description" id="description" cols="30" rows="5" placeholder="Describe the Task here . . ."></textarea>
+                            <br>
+
+                            <?php
+                                // echo "messages = ".$form_success." ".$form_danger;
+                                if($form_success != "")
+                                {
+                            ?>
+                            
+                            <div class="alert alert-success" role="alert">
+                                <?php echo $form_success; ?>
+                            </div>
+                            <?php
+                                }
+                                else if($form_error != "")
+                                {
+                            ?>
+                            
+                            <div class="alert alert-danger" role="alert">
+                                <?php echo $form_error; ?>
+                            </div>
+                            <?php
+                                }
+                            ?>
                             <input type="submit" class="form-control btn btn-primary" name="submit" value="ADD TO LIST">
                         </form>
                     </div>
