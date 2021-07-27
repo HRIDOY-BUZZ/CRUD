@@ -22,7 +22,7 @@ $(document).on('click', "#submit", function(e) {
         }
     })
 });
-//Read Data
+//Reading the Data
 function load_data() {
     $.ajax({
         url: './backend/read.php',
@@ -38,7 +38,7 @@ function load_data() {
 }
 load_data();
 
-//delete data
+//Deleting a data
 $(document).on('click', '.delete', function() {
     let id_value = $(this).attr('id');
     $.ajax({
