@@ -37,3 +37,20 @@ function load_data() {
 
 //calling load_data() for the load data from show.php as soon as document load....
 load_data();
+
+
+
+//delete data
+$(document).on('click', '.delete', function() {
+    let id_value = $(this).attr('id');
+    $.ajax({
+        url: './backend/delete.php',
+        method: "POST",
+        data: { id: id_value },
+        success: function(res, status) {
+            if (status == 'success') {
+                load_data();
+            }
+        }
+    })
+});
